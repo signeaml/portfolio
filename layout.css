@@ -1,0 +1,24 @@
+.oppe,
+.oppe_tema {
+  display: flex;
+}
+.oppe {
+  height: 100px;
+}
+.knap_link {
+  display: flex;
+  justify-content: center; /* Centrerer vandret i forhold til containeren */
+  align-items: center;
+}
+
+@media (min-width: 1300px) {
+  .oppe_tema {
+    display: flex;
+    width: 100%;
+    border: #272187 solid 1px;
+  }
+  .tema_tekst a {
+    margin-left: 300px;
+    margin-right: 300px;
+  }
+}

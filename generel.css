@@ -1,0 +1,538 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+/*generelt*/
+
+body {
+  background-color: #e0e4de;
+}
+
+.knap,
+.knap_link {
+  background-color: white;
+  color: #272187;
+  padding: 10px 20px;
+  border: #272187 solid 1px;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Pathway Gothic One", sans-serif;
+  transition: font-size 0.3s ease;
+}
+.knap_link {
+  background-color: #272187;
+  color: white;
+  border: #e0e4de solid 5px;
+  text-decoration: none;
+  margin: 10px;
+}
+
+.knap:hover {
+  font-size: 25px;
+}
+
+.placering_knap_tema,
+.placering_knap_CV,
+.placering_knap_oversigt {
+  padding-top: 35px;
+  padding-left: 20px;
+}
+
+/*forside*/
+
+#lille_tekst {
+  font-family: "Pathway Gothic One", sans-serif;
+  font-size: 30px;
+  color: #272187;
+  text-align: center;
+  padding-top: 10px;
+}
+
+li {
+  list-style: none;
+  padding: 30px;
+}
+
+.nav-menu a {
+  color: #e0e4de;
+  text-decoration: none;
+  font-family: "Pathway Gothic One", sans-serif;
+  font-size: 50px;
+  transition: font-size 0.3s ease;
+  background-color: #272187;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border: white 10px solid;
+}
+.nav-menu a:hover {
+  font-size: 60px;
+}
+
+.knapper {
+  text-align: center;
+}
+
+.nav-menu {
+  background-color: #e0e4de;
+  padding: 30px;
+}
+
+.forside_billede img {
+  max-height: 400px;
+  width: 400px;
+  padding: 20px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  opacity: 50%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.midte {
+  position: relative;
+  overflow: hidden;
+  padding-top: 30px;
+}
+
+.forside_tekst p {
+  position: absolute;
+  top: 50%; /* Ændr efter behov for at placere teksten */
+  left: 50%; /* Ændr efter behov for at placere teksten */
+  transform: translate(-50%, -50%);
+  text-align: center; /* Juster teksten som ønsket */
+  color: white; /* Farve på teksten */
+  padding: 20px; /* Juster padding efter behov */
+  width: 150%; /* Gør teksten bredere end containeren for at strække sig ud over skærmen */
+  font-size: 110px;
+  font-family: "Pathway Gothic One", sans-serif;
+}
+
+/*oversigt*/
+
+.temaer p {
+  position: absolute;
+  color: white;
+  font-size: 70px;
+  /*font-family: "Pathway Gothic One", sans-serif;*/
+  font-family: "Libre Franklin", sans-serif;
+  padding-left: 20px;
+  top: 75%;
+}
+.farve {
+  background-color: #272187;
+  position: relative;
+}
+
+.temaer img:hover {
+  opacity: 100%;
+}
+.farve:hover p {
+  color: #272187;
+}
+.farve p:hover {
+  color: white;
+}
+
+.temaer img {
+  object-fit: cover;
+  max-height: 500px;
+  height: 400px;
+  opacity: 20%;
+}
+.tema_overskrift p {
+  font-size: 60px;
+  font-family: "Pathway Gothic One", sans-serif;
+  color: white;
+  padding-bottom: 10px;
+}
+
+.tema_overskrift {
+  padding-left: 14%;
+  padding-top: 20px;
+}
+
+/*om mig*/
+
+.navn p {
+  background-color: #272187;
+  color: white;
+  font-family: "Pathway Gothic One", sans-serif;
+  font-size: 30px;
+  text-align: center;
+  white-space: nowrap; /* Gør teksten til en enkelt linje */
+  transform: translateX(-15%);
+}
+
+.navn {
+  overflow: hidden;
+  width: 150%;
+  padding-top: 20px;
+}
+
+.cv_tekst {
+  color: #272187;
+  font-family: "Pathway Gothic One", sans-serif;
+  padding: 20px;
+}
+
+.cv_tekst h1 {
+  font-size: 50px;
+}
+.cv_billede img {
+  max-height: 500px;
+  width: auto;
+  padding: 10px;
+  border: #272187 solid 1px;
+}
+
+.cv_billede {
+  padding: 10px;
+  padding-top: 10px;
+  display: flex;
+  justify-content: center; /* Placerer indholdet (billedet) vandret i midten */
+  align-items: center; /* Placerer indholdet (billedet) lodret i midten */
+}
+
+.billede_kant {
+  background-color: white;
+  padding: 10px;
+  max-width: 420px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.padding_cv {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 30px;
+}
+.cv_linje {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+
+.cv_tekst p {
+  padding-bottom: 3px;
+  text-align: right;
+}
+
+.interesse_tekst p {
+  text-align: left;
+  font-size: 20px;
+  line-height: 27px;
+  padding: 10px;
+}
+.interesse_tekst {
+  background-color: white;
+  border-radius: 5px;
+  padding: 25px;
+}
+
+/*temaer genrelt*/
+
+.overskrift h1 {
+  color: white;
+  font-size: 70px;
+  font-family: "Pathway Gothic One", sans-serif;
+  text-align: center;
+  padding: 20px;
+  padding-bottom: 0;
+}
+
+.overskrift h2 {
+  color: #272187;
+  font-size: 30px;
+  font-family: "Pathway Gothic One", sans-serif;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.overskrift {
+  padding-left: 10%;
+}
+
+.grid p {
+  font-size: 20px;
+  font-family: "Libre Franklin", sans-serif;
+  padding: 30px;
+  padding-top: 0;
+}
+.tema_tekst a {
+  margin-right: 30%;
+  margin-left: 30%;
+}
+.billedetekst {
+  font-size: 10px;
+  font-family: "Libre Franklin", sans-serif;
+  padding: 0;
+  color: black;
+  font-style: italic;
+  text-align: center;
+}
+
+.hvid {
+  margin: 20px;
+}
+
+.hvid {
+  background-color: white;
+}
+
+.grid img {
+  max-height: 80%;
+  width: 100%;
+}
+
+h3 {
+  color: #272187;
+  font-size: 40px;
+  font-family: "Pathway Gothic One", sans-serif;
+  padding-left: 30px;
+  padding-bottom: 10px;
+  padding-top: 30px;
+}
+
+.tema_billede {
+  padding: 20px;
+}
+
+.padding_oversigt {
+  padding: 20px;
+  padding-left: 20px;
+}
+
+@media (min-width: 1300px) {
+  /*generelt*/
+  body {
+    padding-top: 30px;
+  }
+
+  .knap,
+  .knap_link {
+    font-size: 30px;
+  }
+
+  .placering_knap_oversigt,
+  .placering_knap_tema {
+    padding-bottom: 30px;
+    padding-left: 95px;
+    padding-top: 0;
+  }
+
+  .placering_knap_CV {
+    padding-top: 19px;
+    padding-left: 35px;
+  }
+  .knap:hover,
+  .knap_link:hover {
+    font-size: 35px;
+  }
+
+  /*forside*/
+
+  .forside_billede img {
+    position: relative;
+    max-height: 600px;
+    object-fit: cover;
+    width: 600px;
+    align-self: center;
+    margin-right: auto;
+    margin-left: auto;
+    border: #272187 solid 1px;
+    padding: 20px;
+  }
+  .forside_tekst p {
+    font-size: 380px;
+    left: 63%;
+  }
+  .forside_tekst p {
+    left: 50%;
+  }
+
+  .nav-menu {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 550px;
+    padding-right: 550px;
+    padding-top: 70px;
+  }
+  .nav-menu a {
+    border: white 8px solid;
+    font-size: 50px;
+  }
+  #lille_tekst {
+    font-size: 30px;
+  }
+  li {
+    padding: 10px;
+    white-space: nowrap;
+  }
+
+  /*oversigt*/
+
+  .temaer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    place-items: center;
+    padding: 30px;
+    border: #272187 solid 1px;
+  }
+
+  .temaer p {
+    position: absolute;
+    color: white;
+    font-size: 70px;
+    font-family: "Pathway Gothic One", sans-serif;
+    top: 85%;
+    padding-left: 20px;
+  }
+
+  .farve {
+    background-color: #272187;
+  }
+
+  .temaer img {
+    object-fit: cover;
+    max-width: 350px;
+    max-height: 650px;
+    height: 700px;
+    opacity: 20%;
+  }
+
+  .temaer img:hover {
+    opacity: 100%;
+  }
+
+  .tema_overskrift p {
+    font-size: 60px;
+    font-family: "Pathway Gothic One", sans-serif;
+    color: white;
+    padding-bottom: 10px;
+  }
+
+  .tema_overskrift {
+    padding-left: 33%;
+    padding-top: 0;
+  }
+
+  /*om mig*/
+
+  .cv_billede img {
+    max-height: 700px;
+    width: auto;
+    padding: 10px;
+    border: #272187 solid 1px;
+  }
+
+  .cv_billede {
+    padding: 10px;
+    padding-top: 10px;
+  }
+
+  .cv_tekst {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 30px;
+    padding-left: 30px;
+  }
+
+  .cv_linje {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+  }
+
+  .cv_indhold {
+    padding-right: 100px;
+  }
+
+  .cv {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .billede_kant {
+    background-color: white;
+    padding: 10px;
+    max-width: 700px;
+  }
+  .padding_cv {
+    padding: 19px;
+    padding-left: 30px;
+  }
+  .cv_tekst h1 {
+    padding: 10px;
+    padding-left: 0;
+  }
+  .cv_tekst p {
+    padding-bottom: 3px;
+    text-align: right;
+  }
+  .interesse_tekst p {
+    text-align: left;
+    font-size: 20px;
+    line-height: 27px;
+    padding: 10px;
+  }
+  .interesse_tekst {
+    background-color: white;
+    border-radius: 5px;
+    padding: 25px;
+  }
+
+  .interesser_padding {
+    padding-right: 50px;
+  }
+
+  .navn p {
+    font-size: 60px;
+  }
+
+  .navn {
+    padding-top: 0;
+  }
+
+  /*teamer*/
+
+  .overskrift h1 {
+    font-size: 100px;
+    padding: 0px;
+    padding-bottom: 0;
+  }
+
+  .overskrift h2 {
+    font-size: 40px;
+    padding-bottom: 20px;
+  }
+
+  .overskrift {
+    padding-left: 30%;
+  }
+
+  .grid {
+    padding: 30px;
+  }
+  .grid img {
+    padding-top: 30px;
+  }
+
+  .grid p {
+    line-height: 34px;
+  }
+  .hvid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 90px;
+  }
+  .tema_tekst {
+    padding: 30px;
+  }
+}
